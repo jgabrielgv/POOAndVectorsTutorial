@@ -26,7 +26,7 @@ public class Main {
         System.out.println("Nombre p2: " + p2.getName());
         System.out.println("Nombre p3: " + p3.getName() + ". primera iteracion.");
         System.out.println();
-        
+                
         p1 = null;
         p3.setId("207020324");
         p3.setName("Juan");
@@ -35,6 +35,10 @@ public class Main {
         System.out.println("Referencia p1: " + p1);
         System.out.println("Referencia p2: " + p2);
         System.out.println("Referencia p3: " + p3);
+        System.out.println();
+        
+        System.out.println("Imprimo this: " + p2.RetornarActual());
+        System.out.println("Imprimo this: " + p3.RetornarActual());
         System.out.println();
         
         System.out.println("Direccion (address) de p3: " + p3.getAddress().getAddress());
@@ -59,9 +63,12 @@ public class Main {
         System.out.println();
         
         TestStatic tst = new TestStatic();
+        System.out.println(TestStatic.value);
         tst.method2();
-        TestStatic.value = 11;
-        //System.out.println("Direccion (objeto) de p1: " + p1.getAddress().getAddress());
+        System.out.println(TestStatic.value);
+        //TestStatic.value = 11;
+        
+        //System.out.println("Direccion (objeto) de p1: " + p1.getAddress().getAddress());//dispara error
     }
     
 }

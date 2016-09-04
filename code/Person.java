@@ -6,6 +6,8 @@
 
 /**
  *
+ * https://github.com/jgabrielgv/POOAndVectorsTutorial
+ * 
  * @author juancho
  */
 public class Person {
@@ -17,7 +19,7 @@ public class Person {
     public static String commonName = "Juan";
     
     public Person() {
-        
+        commonName = "erere";
     }
     
     public Person(String name) {
@@ -82,6 +84,10 @@ public class Person {
         person = new Person("Felipe");
         System.out.println("Direccion paso por valor 2: " + person + ". segunda iteracion.");
         return value;
+    }
+    
+    public Person RetornarActual() {
+      return this;
     }
  
 }

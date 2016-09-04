@@ -17,7 +17,16 @@ public class TestStatic {
     }
     
     public void method2(){
+      this.value = 8;
+      System.out.println("TestStatic.value method2: " + value);
+      method2(value);
+    }
+    
+    public void method2(int value){
+        System.out.println("Copia method2(value): " + value);
         value = 4;
+        System.out.println("Copia method2(value): " + value);
+        System.out.println("Variable TestStatic.value: " + TestStatic.value);
         method1();
     }
     
