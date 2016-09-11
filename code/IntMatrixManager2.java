@@ -74,7 +74,7 @@ public class IntMatrixManager2 {
      */
     public boolean isSumAcumCol() {
         int sum;
-        if (hasElements() && matrix[0].length > 0) {
+        if (hasElements() && matrix[0].length > 1) {
             for (int i = 0; i < matrix.length; i++) {
                 sum = 0;
                 for (int j = 0; j < matrix[i].length; j++) {
