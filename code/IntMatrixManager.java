@@ -28,7 +28,7 @@ public class IntMatrixManager {
     }
 
     public IntMatrixManager(int rows, int columns) {
-	if(rows >= 0 && columns >= 0 {
+	if(rows >= 0 && columns >= 0) {
             this.matrix = new int[rows][columns];
 	} else {
             this.matrix = new int[SIZE][SIZE];
