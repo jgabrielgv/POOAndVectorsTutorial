@@ -28,7 +28,11 @@ public class IntMatrixManager {
     }
 
     public IntMatrixManager(int rows, int columns) {
-        this.matrix = new int[rows][columns];
+	if(rows >= 0 && columns >= 0 {
+            this.matrix = new int[rows][columns];
+	} else {
+            this.matrix = new int[SIZE][SIZE];
+	}
     }
 
     public String getStringMatrix() {
