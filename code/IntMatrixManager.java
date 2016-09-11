@@ -145,7 +145,7 @@ public class IntMatrixManager {
     }
 
     public int[][] clone() {
-        if (matrix.length > 0 && matrix[0].length > 0) {
+        if (matrix.length > 0) {
             int[][] copy = new int[matrix.length][];
             for (int i = 0; i < matrix.length; i++) {
                 copy[i] = new int[matrix[i].length];//need to know the length in case it is an irregular matrix
